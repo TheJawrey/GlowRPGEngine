@@ -6,6 +6,6 @@ import java.util.Scanner;
 public class Battle {
 
 	public static void battle(String[] battleParameters){
-		Arrays.toString(battleParameters);
+		System.out.println(Arrays.toString(battleParameters));
 	}
 }

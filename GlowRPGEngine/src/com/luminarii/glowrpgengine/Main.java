@@ -1,7 +1,6 @@
 package com.luminarii.glowrpgengine;
 
 import java.util.Scanner;
-
 import com.luminarii.glowrpgengine.battle.Battle;
 
 public class Main {
@@ -16,11 +15,11 @@ public class Main {
 			battleParameters[x] = scan.next();
 		}
 		System.out.println("Enter location:");
-		battleParameters[4] = scan.next();
+		battleParameters[3] = scan.next();
 		
 		for(int x=0; x<i; x++){
 			System.out.println("Enter enemy "+(x+1)+":");
-			battleParameters[x] = scan.next();
+			battleParameters[4+x] = scan.next();
 		}
 		Battle.battle(battleParameters);
 	}
