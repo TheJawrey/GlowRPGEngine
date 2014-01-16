@@ -6,10 +6,9 @@ import com.luminarii.glowrpgengine.battle.characters.*;
 
 public class Battle {
 
-	public static boolean battle(String[] battleParameters){
-		HeroJack hero1 = new HeroJack();
-		
-		System.out.println(Arrays.toString(battleParameters));
+	public static boolean battle(String[] params){
+		Hero.params[0]();
+		System.out.println(Arrays.toString(params));
 		return false;
 	}
 }
