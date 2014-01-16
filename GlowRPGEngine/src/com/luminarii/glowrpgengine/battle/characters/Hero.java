@@ -1,6 +1,6 @@
 package com.luminarii.glowrpgengine.battle.characters;
 
-public class Character {
+public class Hero {
 	String name = null;
 	int maxHP = 15;
 	int maxSP = 15;
