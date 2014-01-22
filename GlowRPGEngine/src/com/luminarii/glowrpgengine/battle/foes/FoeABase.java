@@ -1,8 +1,8 @@
 package com.luminarii.glowrpgengine.battle.foes;
 
-public class FoeZombie extends Foe {
+public class FoeABase extends Foe {
 
-	public FoeZombie() {
+	public FoeABase() {
 		setHP(0);
 		setMaxHP(0);
 		setSP(0);
