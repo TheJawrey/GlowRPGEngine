@@ -1,14 +1,14 @@
 package com.luminarii.glowrpgengine.battle;
 
-import com.luminarii.glowrpgengine.battle.heros.*;
+import com.luminarii.glowrpgengine.battle.heros.Hero;
 
 public class Battle {
 
-	public static boolean battle(String[] params){
-		System.out.println(params[0]+" and "+params[1]+" are here!");
+	public static Hero[] battle(String[] params, Hero[] party){
+		
 		
 		System.out.print("\nRestarting...\n\n");
-		return false;
+		return party;
 	}
 	
 }

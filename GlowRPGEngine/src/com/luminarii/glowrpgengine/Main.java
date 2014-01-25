@@ -2,11 +2,19 @@ package com.luminarii.glowrpgengine;
 
 import java.util.Scanner;
 import com.luminarii.glowrpgengine.battle.Battle;
+import com.luminarii.glowrpgengine.battle.heros.*;
 
 public class Main {
 
 	public static void main(String args[]){
+		Hero[] party = new Hero[3];
+		
+		party[0] = new HeroMage();
+		party[1] = new HeroWarrior();
+		party[2] = new HeroTheif();
+		
 		String[] voidArray = new String[5];
+		
 		Scanner scan = new Scanner(System.in);
 		boolean gameOver = false;
 		while(gameOver==false){
@@ -17,7 +25,7 @@ public class Main {
 			
 			switch(scan.nextInt()){
 			case 1:
-				Battle.battle(voidArray);
+				Battle.battle(voidArray, party);
 				break;
 				
 			case 2:
@@ -35,7 +43,7 @@ public class Main {
 					System.out.println("Enter enemy "+(x+1)+":");
 					battleParameters[4+x] = scan.next();
 				}
-				gameOver = Battle.battle(battleParameters);
+				party = Battle.battle(battleParameters, party);
 				break;
 			}
 		}
