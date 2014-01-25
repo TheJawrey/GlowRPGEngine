@@ -13,6 +13,8 @@ public class Main {
 		party[1] = new HeroWarrior();
 		party[2] = new HeroTheif();
 		
+		party[0].print();
+		
 		String[] voidArray = new String[5];
 		
 		Scanner scan = new Scanner(System.in);
