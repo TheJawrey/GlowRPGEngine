@@ -14,7 +14,7 @@ public class FoeList {
 		public static Foe[] setC = {goblin, orc, slime};
 		public static Foe[] slimeX4 = {slime, slime, slime, slime};
 		public static Foe[] hardSet = {flamePig, flamePig, manEatingBurger};
-		public static Foe[] bossSpagettiMonster = {goblin, goblin, slime};
+		public static Foe[] bossSpagettiMonster = {spagettiMonster};
 		
 		public static Foe missingNo = new Foe(10, 10, 10, 10, 10, 10, 10,"MissingNO");
 		public static Foe[] missingList = {missingNo};
