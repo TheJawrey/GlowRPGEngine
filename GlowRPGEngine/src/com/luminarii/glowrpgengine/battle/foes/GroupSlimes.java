@@ -6,5 +6,4 @@ public class GroupSlimes extends Group {
 		super(new FoeSlime(), new FoeSlime(), new FoeSlime(), null, null, null);
 		// TODO Auto-generated constructor stub
 	}
-
 }

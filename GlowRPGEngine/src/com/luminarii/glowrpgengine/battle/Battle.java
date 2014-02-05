@@ -56,7 +56,12 @@ public class Battle{
 	    if(foe4Alive == true) {foe4.print();}
 	    if(foe5Alive == true) {foe5.print();}
 	    if(foe6Alive == true) {foe6.print();}
-
+	    
+	    
+	    //battle ending code
+	    party.setHero(1, hero1);
+	    party.setHero(1, hero2);
+	    party.setHero(1, hero3);
 		System.out.print("\nRestarting...\n\n");
 	}
 	
