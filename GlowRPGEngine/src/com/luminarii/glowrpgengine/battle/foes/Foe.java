@@ -4,18 +4,34 @@ public class Foe {
 	public int HP, maxHP, SP, maxSP, attack,  defense, solAptitude;
 	public String name;
 	
-	public Foe(int par1, int par2, int par3, int par4, int par5, int par6, int par7, String par8){
+	//setters
+	public void setHP(int par1){
 		HP = par1;
-		maxHP = par2;
-		SP = par3;
-		maxSP = par4;
-		attack = par5;
-		defense = par6;
-		solAptitude = par7;
-		name = par8;
 	}
-
+	public void setMaxHP(int par1){
+		maxHP = par1;
+	}
+	public void setSP(int par1){
+		SP = par1;
+	}
+	public void setMaxSP(int par1){
+		maxSP = par1;
+	}
+	public void setAttack(int par1){
+		attack = par1;
+	}
+	public void setDefense(int par1){
+		defense = par1;
+	}
+	public void setSolAptitude(int par1){
+		solAptitude = par1;
+	}
+	public void setName(String par1){
+		name = par1;
+	}
+	//setters
 	
+	//modifiers
 	public void lowerHP(int par1){
 		HP -= par1;
 	}
@@ -28,7 +44,7 @@ public class Foe {
 	public void raiseSP(int par1){
 		SP += par1;
 	}
-	
+	//modifiers
 	
 	public void print(){
 		System.out.println(name+"'s stats:");
@@ -38,5 +54,6 @@ public class Foe {
 		System.out.println("Max SP = "+maxSP);
 		System.out.println("Attack = "+attack);
 		System.out.println("Defense = "+defense);
+		System.out.println("Sol Aptitude = "+ solAptitude+"\n");
 	}
 }

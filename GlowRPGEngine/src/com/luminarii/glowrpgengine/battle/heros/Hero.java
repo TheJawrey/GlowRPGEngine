@@ -1,22 +1,49 @@
 package com.luminarii.glowrpgengine.battle.heros;
 
 public class Hero {
-	public int HP, maxHP, SP, maxSP, attack,  defense, solAptitude, AP, freeAP;
+	public int HP, maxHP, SP, maxSP, attack,  defense, solAptitude, AP, freeAP, XP, level;
 	public String name;
 	
-	public Hero(int par1, int par2, int par3, int par4, int par5, int par6, int par7, int par8, int par9, String par10){
+	//setters
+	public void setHP(int par1){
 		HP = par1;
-		maxHP = par2;
-		SP = par3;
-		maxSP = par4;
-		attack = par5;
-		defense = par6;
-		solAptitude = par7;
-		AP = par8;
-		freeAP = par9;
-		name = par10;
 	}
+	public void setMaxHP(int par1){
+		maxHP = par1;
+	}
+	public void setSP(int par1){
+		SP = par1;
+	}
+	public void setMaxSP(int par1){
+		maxSP = par1;
+	}
+	public void setAttack(int par1){
+		attack = par1;
+	}
+	public void setDefense(int par1){
+		defense = par1;
+	}
+	public void setSolAptitude(int par1){
+		solAptitude = par1;
+	}
+	public void setAP(int par1){
+		AP = par1;
+	}
+	public void setFreeAP(int par1){
+		freeAP = par1;
+	}
+	public void setXP(int par1){
+		XP = par1;
+	}
+	public void setLevel(int par1){
+		level = par1;
+	}
+	public void setName(String par1){
+		name = par1;
+	}
+	//setters
 	
+	//modifiers
 	public void lowerHP(int par1){
 		HP -= par1;
 	}
@@ -29,7 +56,7 @@ public class Hero {
 	public void raiseSP(int par1){
 		SP += par1;
 	}
-	
+	//modifiers
 	
 	public void print(){
 		System.out.println(name+"'s stats:");
@@ -39,5 +66,9 @@ public class Hero {
 		System.out.println("Max SP = "+maxSP);
 		System.out.println("Attack = "+attack);
 		System.out.println("Defense = "+defense);
+		System.out.println("Sol Aptitude = "+ solAptitude);
+		System.out.println("AP = "+AP);
+		System.out.println("XP = "+XP);
+		System.out.println("Level = "+level+"\n");
 	}
 }

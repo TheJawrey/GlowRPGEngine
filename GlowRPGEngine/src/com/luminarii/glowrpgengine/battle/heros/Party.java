@@ -9,24 +9,24 @@ public class Party {
 	Hero hero5;
 	Hero hero6;
 	
-	public void addHero(Hero newHero){
+	public void addHero(Hero par1){
 		if(hero1 == null){
-		hero1 = newHero;
+		hero1 = par1;
 		return;}
 		if(hero2 == null){
-		hero1 = newHero;
+		hero2 = par1;
 		return;}
 		if(hero3 == null){
-		hero1 = newHero;
+		hero3 = par1;
 		return;}
 		if(hero4 == null){
-		hero1 = newHero;
+		hero4 = par1;
 		return;}
 		if(hero5 == null){
-		hero1 = newHero;
+		hero5 = par1;
 		return;}
 		if(hero6 == null){
-		hero1 = newHero;
+		hero6 = par1;
 		return;}
 	}
 	
